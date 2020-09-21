@@ -19,5 +19,6 @@ from hierarchyapp import views
 
 urlpatterns = [
     path('', views.Index.as_view(), name='home'),
+    path('new_item/', views.ItemFormView.as_view(), name='new'),
     path('admin/', admin.site.urls),
 ]
