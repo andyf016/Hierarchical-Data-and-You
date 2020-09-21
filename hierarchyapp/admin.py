@@ -1,5 +1,5 @@
 from django.contrib import admin
-from hierarchyapp.models import Information
-from mptt.admin import MPTTModelAdmin
+from hierarchyapp.models import File
+from mptt.admin import MPTTModelAdmin, DraggableMPTTAdmin
 
-admin.site.register(Information, MPTTModelAdmin)
+admin.site.register(File, DraggableMPTTAdmin)
