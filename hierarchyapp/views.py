@@ -8,4 +8,4 @@ class Index(TemplateView):
         all_files = File.objects.all()
         return render(request, 'index.html', {'nodes': all_files})
 
-# Create your views here.
+
